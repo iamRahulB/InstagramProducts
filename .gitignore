@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+*.cookies.json
+chatgpt.com.cookies.json
+coockie.json
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+build/
+data/research/
+# local binaries
+*.deb

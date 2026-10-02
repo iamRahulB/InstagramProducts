@@ -1,0 +1,62 @@
+shared:
+  country: India
+  run_type: dry_run        # dry_run | production — dry_run minimizes external API calls
+
+phase1:
+  outfit:
+    occasion_minimum_lead_days: 10
+    occasion_horizon_days: 120
+    gender_options:
+      - male
+      - female
+    gender_balance_max_runs: 20
+    history_limit: 5
+    categories:
+      - shirt
+      - tshirt
+      - kurta
+      - churidar
+      - palazzo
+      - top
+      - blouse
+      - dress
+      - jacket
+      - hoodie
+      - sweater
+      - pants
+      - jeans
+      - cargo_pants
+      - skirt
+      - shorts
+      - sneakers
+      - boots
+      - sandals
+      - heels
+      - loafers
+      - flats
+      - necklace
+      - chain
+      - earrings
+      - bracelet
+      - bangles
+      - ring
+      - watch
+      - handbag
+      - sunglasses
+      - belt
+      - scarf
+      - cap
+      - hat
+phase2:
+  enabled: true
+  gender_filter: female        # male | female | both — limits SerpApi credit usage
+  max_products_per_item: 5
+  serpapi_engine: google_shopping
+  hl: en
+  currency: INR
+  download_images: true
+  retailers:
+    - myntra.com
+    - amazon.in
+    - flipkart.com
+  output_dir: data/products

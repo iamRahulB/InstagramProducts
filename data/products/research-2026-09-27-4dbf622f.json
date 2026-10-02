@@ -1,0 +1,10 @@
+{
+  "research_id": "research-2026-09-27-4dbf622f",
+  "outfit_id": "outfit-2026-09-27-4dbf622f",
+  "country": "India",
+  "gender": "male",
+  "items": [],
+  "warnings": [
+    "Skipped: outfit gender 'male' does not match phase2 gender_filter 'female'."
+  ]
+}

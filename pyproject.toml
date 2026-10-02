@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "instagram-products"
+version = "0.1.0"
+description = "Phase 1 fashion trend and demand research engine"
+requires-python = ">=3.11"
+dependencies = [
+  "httpx>=0.27,<1",
+  "holidays>=0.50,<1",
+  "pydantic>=2.7,<3",
+  "PyYAML>=6.0,<7",
+  "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "pytest-asyncio>=0.23,<1"]
+
+[project.scripts]
+phase1 = "phase1.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools.packages.find]
+include = ["phase1*"]
